@@ -31,4 +31,12 @@ public class PlayerController : MonoBehaviour {
             pM.MoveDown();
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "Student" && Input.GetMouseButtonDown(0))
+        {
+            print("BAFFE !");
+        }
+    }
 }
