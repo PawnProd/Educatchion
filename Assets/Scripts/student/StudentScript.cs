@@ -10,6 +10,7 @@ public class StudentScript : MonoBehaviour {
     public float timeBeforeCanStopListening = 3.0f;
     public float currentTime;
     public GameObject classroom;
+    public GameObject blood;
     public float notListeningRandom;
     public float switchRate = 75.0f;
     private float actionNumber = 3.0f;
@@ -40,6 +41,12 @@ public class StudentScript : MonoBehaviour {
         if(isListening)
         {
             stopListening();
+        }
+
+        if(blood.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Blood"))
+        {
+            blood.GetComponent<Animator>().SetBool("isBlood", false);
+            blood.SetActive(false);  
         }
     }
 
@@ -101,6 +108,8 @@ public class StudentScript : MonoBehaviour {
             {
                 studentSpeakingWith.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
             }
+            blood.SetActive(true);
+            blood.GetComponent<Animator>().SetBool("isBlood", true);
         classroom.GetComponent<ClassroomScript>().studentNotListening--;
         spriteRenderer.color = Color.green;
         isListening = true;
