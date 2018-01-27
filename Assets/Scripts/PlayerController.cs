@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour {
             RaycastHit2D hit;
 
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
             if (hit.collider != null && hit.collider.tag == "Student" && !hit.collider.GetComponent<StudentScript>().isListening)
             {
                 projectile.GetComponent<Projectile>().student = hit.collider.gameObject;
