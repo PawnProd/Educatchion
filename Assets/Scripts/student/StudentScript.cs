@@ -79,7 +79,7 @@ public class StudentScript : MonoBehaviour {
         else if (actionChoice == 2)
         {
             numberOfStudentToSpeak = studentToSpeak.Length;
-            studentSpeakingWith = studentToSpeak[Random.Range(0, studentToSpeak.Length)];
+            studentSpeakingWith = studentToSpeak[Random.Range(0, studentToSpeak.Length -1)];
             
             studentSpeakingWith.GetComponent<StudentScript>().SendMessage("youreTalkingToMe",gameObject, SendMessageOptions.DontRequireReceiver);
             speakingToSomeone = true;

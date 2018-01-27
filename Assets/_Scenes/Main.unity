@@ -1395,6 +1395,89 @@ Prefab:
       propertyPath: m_FontData.m_Alignment
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114850350770293512, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7459d8a21e8a3044aa23b58e53e5fd5b,
+        type: 3}
+    - target: {fileID: 114903239911497054, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 584deed1ce90e124c85d36ba059c7ea1,
+        type: 3}
+    - target: {fileID: 224320909398672392, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 224320909398672392, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594363192072054, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594363192072054, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288893009635354, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dbd713599af2d95478282588a3487101,
+        type: 3}
+    - target: {fileID: 114288893009635354, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288893009635354, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288893009635354, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224405843119941368, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 224405843119941368, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 224229531196043478, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 224229531196043478, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 224229531196043478, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224229531196043478, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114991213223109472, guid: d09adab9288d7e0469bba81782c7f933, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d09adab9288d7e0469bba81782c7f933, type: 2}
@@ -4044,7 +4127,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1665375932862728, guid: d09adab9288d7e0469bba81782c7f933,
     type: 2}
   m_PrefabInternal: {fileID: 837178019}
---- !u!114 &1767871710
+--- !u!114 &1767871711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
