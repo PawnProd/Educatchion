@@ -191,6 +191,7 @@ MonoBehaviour:
   projectilPrefab: {fileID: 1846476711716780, guid: 68e14a2e0e8ec1c4d97e0eb59952a893,
     type: 2}
   spawnProjectil: {fileID: 4782439755861406}
+  ath: {fileID: 0}
   ammo: 4
 --- !u!114 &114894729682937060
 MonoBehaviour:
