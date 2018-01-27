@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 
     public PlayerMovement pM;
 
+    public DetectionBehavior detect;
+
     private void Start()
     {
         pM = GetComponent<PlayerMovement>();
@@ -22,22 +24,18 @@ public class PlayerController : MonoBehaviour {
         {
             pM.MoveLeft();
         }
-        else if(Input.GetAxis("Vertical") > 0)
+        else if(Input.GetAxis("Vertical") > 0) // UP
         {
             pM.MoveUp();
         }
-        else if(Input.GetAxis("Vertical") < 0)
+        else if(Input.GetAxis("Vertical") < 0) // DOWN
         {
             pM.MoveDown();
         }
-    }
-
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if(other.collider.tag == "Student" && Input.GetMouseButtonDown(0))
+        
+        if(Input.GetMouseButtonDown(0) && detect.student != null) // HIT a student
         {
-            other.gameObject.GetComponent<StudentScript>().SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
-            print("BAFFE !");
+            detect.student.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
         }
     }
 }

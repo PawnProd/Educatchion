@@ -337,14 +337,25 @@ MonoBehaviour:
   switchRate: 75
   actionNumber: 2
   actionChoice: 0
-  studentBag: {fileID: 0}
-  studentBagScript: {fileID: 0}
-  haveBag: 0
+  studentBag: {fileID: 339896403}
+  studentBagScript: {fileID: 339896407}
+  haveBag: 1
+--- !u!1 &339896403 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1123933339066266, guid: 26d9731db91164d45a155d7557349bdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1493664032}
 --- !u!4 &339896404 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4001050451775346, guid: 26d9731db91164d45a155d7557349bdd,
     type: 2}
   m_PrefabInternal: {fileID: 1493664032}
+--- !u!114 &339896407 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114221018021140566, guid: 26d9731db91164d45a155d7557349bdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1493664032}
+  m_Script: {fileID: 11500000, guid: ca408134d1851f84795a08d092db9088, type: 3}
 --- !u!1 &350120513
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,11 +508,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1 &460881882 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1123933339066266, guid: 26d9731db91164d45a155d7557349bdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389352767}
 --- !u!4 &460881883 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4001050451775346, guid: 26d9731db91164d45a155d7557349bdd,
     type: 2}
   m_PrefabInternal: {fileID: 1389352767}
+--- !u!114 &460881886 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114221018021140566, guid: 26d9731db91164d45a155d7557349bdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389352767}
+  m_Script: {fileID: 11500000, guid: ca408134d1851f84795a08d092db9088, type: 3}
 --- !u!114 &558840076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2714,9 +2736,9 @@ MonoBehaviour:
   switchRate: 75
   actionNumber: 2
   actionChoice: 0
-  studentBag: {fileID: 0}
-  studentBagScript: {fileID: 0}
-  haveBag: 0
+  studentBag: {fileID: 460881882}
+  studentBagScript: {fileID: 460881886}
+  haveBag: 1
 --- !u!1 &1060581539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3255,9 +3277,9 @@ MonoBehaviour:
   switchRate: 75
   actionNumber: 2
   actionChoice: 0
-  studentBag: {fileID: 0}
-  studentBagScript: {fileID: 0}
-  haveBag: 0
+  studentBag: {fileID: 1771847091}
+  studentBagScript: {fileID: 1771847095}
+  haveBag: 1
 --- !u!1001 &1389352767
 Prefab:
   m_ObjectHideFlags: 0
@@ -3312,7 +3334,12 @@ Prefab:
     - target: {fileID: 212018614273226702, guid: 26d9731db91164d45a155d7557349bdd,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61424288702409422, guid: 26d9731db91164d45a155d7557349bdd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26d9731db91164d45a155d7557349bdd, type: 2}
@@ -3418,6 +3445,16 @@ Prefab:
     - target: {fileID: 1123933339066266, guid: 26d9731db91164d45a155d7557349bdd, type: 2}
       propertyPath: m_Name
       value: backPack (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 61424288702409422, guid: 26d9731db91164d45a155d7557349bdd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212018614273226702, guid: 26d9731db91164d45a155d7557349bdd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26d9731db91164d45a155d7557349bdd, type: 2}
@@ -3543,11 +3580,22 @@ MonoBehaviour:
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+--- !u!1 &1771847091 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1123933339066266, guid: 26d9731db91164d45a155d7557349bdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1993910940}
 --- !u!4 &1771847092 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4001050451775346, guid: 26d9731db91164d45a155d7557349bdd,
     type: 2}
   m_PrefabInternal: {fileID: 1993910940}
+--- !u!114 &1771847095 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114221018021140566, guid: 26d9731db91164d45a155d7557349bdd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1993910940}
+  m_Script: {fileID: 11500000, guid: ca408134d1851f84795a08d092db9088, type: 3}
 --- !u!1001 &1993910940
 Prefab:
   m_ObjectHideFlags: 0
@@ -3602,6 +3650,16 @@ Prefab:
     - target: {fileID: 1123933339066266, guid: 26d9731db91164d45a155d7557349bdd, type: 2}
       propertyPath: m_Name
       value: backPack (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 61424288702409422, guid: 26d9731db91164d45a155d7557349bdd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212018614273226702, guid: 26d9731db91164d45a155d7557349bdd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26d9731db91164d45a155d7557349bdd, type: 2}
