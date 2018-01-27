@@ -13,7 +13,6 @@ public class TransmissionController : MonoBehaviour {
         if(isOnPlateform)
         {
             // On calcul la transmission en fonction du nombre d'élève à l'écoute
-            print("Transmission !");
         }
     }
 

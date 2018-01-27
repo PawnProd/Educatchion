@@ -9,24 +9,28 @@ public class PlayerMovement : MonoBehaviour {
 
     public void MoveLeft()
     {
+        transform.Translate(Vector3.zero);
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 180, transform.localEulerAngles.z);
         Move();
     }
 
     public void MoveRight()
     {
+        transform.Translate(Vector3.zero);
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 0, transform.localEulerAngles.z);
         Move();
     }
 
     public void MoveUp()
     {
+        transform.Translate(Vector3.zero);
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, -90, transform.localEulerAngles.z);
         Move();
     }
 
     public void MoveDown()
     {
+        transform.Translate(Vector3.zero);
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 90, transform.localEulerAngles.z);
         Move();
     }

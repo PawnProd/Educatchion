@@ -6,6 +6,14 @@ public class PlayerController : MonoBehaviour {
 
     public PlayerMovement pM;
 
+    public DetectionBehavior detect;
+
+    public GameObject projectilPrefab;
+
+    public Transform spawnProjectil;
+
+    public int ammo = 4;
+
     private void Start()
     {
         pM = GetComponent<PlayerMovement>();
@@ -22,22 +30,31 @@ public class PlayerController : MonoBehaviour {
         {
             pM.MoveLeft();
         }
-        else if(Input.GetAxis("Vertical") > 0)
+        else if(Input.GetAxis("Vertical") > 0) // UP
         {
             pM.MoveUp();
         }
-        else if(Input.GetAxis("Vertical") < 0)
+        else if(Input.GetAxis("Vertical") < 0) // DOWN
         {
             pM.MoveDown();
         }
-    }
-
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if(other.collider.tag == "Student" && Input.GetMouseButtonDown(0))
+        
+        if(Input.GetMouseButtonDown(0) && detect.student != null) // HIT a student
         {
-            other.gameObject.GetComponent<StudentScript>().SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
-            print("BAFFE !");
+            detect.student.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
+        }
+
+        if (Input.GetMouseButtonDown(1) && ammo > 0)
+        {
+            RaycastHit2D hit;
+            hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+            print("Coucou");
+            if (hit.collider.tag == "Student")
+            {
+                print("Coucou 1");
+                GameObject projectile = Instantiate(projectilPrefab, spawnProjectil.position, Quaternion.identity, transform.parent);
+                projectile.GetComponent<Projectile>().student = hit.collider.gameObject;
+            }
         }
     }
 }
