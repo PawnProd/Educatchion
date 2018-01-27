@@ -50,7 +50,7 @@ public class ATHManager : MonoBehaviour {
 
     public void UpdateProgessBar(float progressSpeed)
     {
-        progressBar.fillAmount += progressSpeed;
+        progressBar.fillAmount -= progressSpeed;
     }
 
     public void ShowPopupWin(int score)
