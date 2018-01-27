@@ -6,7 +6,7 @@ public class StudentScript : MonoBehaviour {
 
     // Use this for initialization
     SpriteRenderer spriteRenderer;
-    public bool isListening;
+    private bool isListening = true;
     public float timeBeforeCanStopListening = 3.0f;
     public float currentTime;
     public GameObject classroom;
@@ -58,9 +58,12 @@ public class StudentScript : MonoBehaviour {
 
     }
     void getHit()
-    {
-        isListening = true;
+    {   
+        if(!isListening)
+        {
         classroom.GetComponent<ClassroomScript>().studentNotListening--;
         spriteRenderer.color = Color.green;
+        isListening = true;
+        }
     }
 }
