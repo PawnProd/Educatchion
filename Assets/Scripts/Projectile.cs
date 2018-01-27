@@ -11,8 +11,6 @@ public class Projectile : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = Vector2.MoveTowards(transform.position, student.transform.position, speed * Time.deltaTime);
-        print(student.transform.position);
-        print(transform.position);
         if (transform.position == student.transform.position)
         {
             Destroy(gameObject);
