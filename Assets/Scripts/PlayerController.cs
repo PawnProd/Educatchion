@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour {
     {
         if(other.collider.tag == "Student" && Input.GetMouseButtonDown(0))
         {
+            other.gameObject.GetComponent<StudentScript>().SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
             print("BAFFE !");
         }
     }
