@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 114961789245944040}
   - component: {fileID: 114907151547326786}
   m_Layer: 5
-  m_Name: HUD 1
+  m_Name: HUDpause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
