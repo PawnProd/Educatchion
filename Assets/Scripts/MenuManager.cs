@@ -6,10 +6,7 @@ using UnityEngine.UI;
 public class MenuManager: MonoBehaviour {
 
     public bool pause;
-    public Button jouez;
-    public Button quittez;
-    public Text Pause;
-    public Button PauseMoment;
+    public GameObject objetPause;
 
     // Use this for initialization
     void Start () {
@@ -17,45 +14,33 @@ public class MenuManager: MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void fixedUpdate () {
+	void Update () {
         
-        if(Input.GetKeyUp("space"))
+        if(Input.GetKeyUp(KeyCode.P))
         {
             if (!pause)
             {
-                jouez.GetComponent<GameObject>().SetActive(false);
-                quittez.GetComponent<GameObject>().SetActive(false);
-                Pause.GetComponent<GameObject>().SetActive(false);
-                PauseMoment.GetComponent<GameObject>().SetActive(true);
+                objetPause.SetActive(true);
                 pause = true;
             }
             else
             {
-                jouez.GetComponent<GameObject>().SetActive(true);
-                quittez.GetComponent<GameObject>().SetActive(true);
-                Pause.GetComponent<GameObject>().SetActive(true);
-                PauseMoment.GetComponent<GameObject>().SetActive(false);
+                objetPause.SetActive(false);
                 pause = false;
             }
         }
     }
 
-    private void pauseStop()
+    public void pauseStop()
     {
         if (!pause)
         {
-            jouez.GetComponent<GameObject>().SetActive(false);
-            quittez.GetComponent<GameObject>().SetActive(false);
-            Pause.GetComponent<GameObject>().SetActive(false);
-            PauseMoment.GetComponent<GameObject>().SetActive(true);
+            objetPause.SetActive(false);
             pause = true;
         }
         else
         {
-            jouez.GetComponent<GameObject>().SetActive(true);
-            quittez.GetComponent<GameObject>().SetActive(true);
-            Pause.GetComponent<GameObject>().SetActive(true);
-            PauseMoment.GetComponent<GameObject>().SetActive(false);
+            objetPause.SetActive(false);
             pause = false;
         }
     }
