@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212733155069574888}
   - component: {fileID: 114410402477775910}
   - component: {fileID: 61626260026704502}
-  - component: {fileID: 50290199188902454}
+  - component: {fileID: 95963497046593832}
   m_Layer: 0
   m_Name: Student
   m_TagString: Student
@@ -36,33 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1600332332847162}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.5, y: 0, z: -2.4700017}
+  m_LocalRotation: {x: 0.50000006, y: -0.50000006, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -4.5, y: 0, z: 3.4900005}
   m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000002}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50290199188902454
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1600332332847162}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 90}
 --- !u!61 &61626260026704502
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -79,7 +59,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.1851852, y: 1.1851852}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -88,6 +68,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &95963497046593832
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1600332332847162}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1951f557c50ea84381bdc1d45e78667, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114410402477775910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -105,11 +102,13 @@ MonoBehaviour:
   classroom: {fileID: 0}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!212 &212733155069574888
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -144,8 +143,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: dad985170eccf3345adeb7a3aa89d7a7, type: 3}
-  m_Color: {r: 0.15428196, g: 0.6397059, b: 0.03292603, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8825666eebd56544889881cc0009caa9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
