@@ -21,6 +21,7 @@ public class StudentScript : MonoBehaviour {
     public GameObject[] studentToSpeak ;
     public int numberOfStudentToSpeak;
     public GameObject studentSpeakingWith;
+    public Animator animator;
     private bool speakingToSomeone = false;
     void Start()
     {
@@ -31,6 +32,7 @@ public class StudentScript : MonoBehaviour {
         {
         studentBagScript = studentBag.GetComponent<backPackScript>();
         }
+        animator = GetComponent<Animator>();
         //Set the GameObject's Color quickly to a set Color (blue)
         //spriteRenderer.color = Color.green;
     }
@@ -93,7 +95,7 @@ public class StudentScript : MonoBehaviour {
         }
         isListening = false;
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
-        spriteRenderer.color = Color.red;
+        animator.SetBool("isSleep", true);
 
 
     }
@@ -110,16 +112,16 @@ public class StudentScript : MonoBehaviour {
             }
             blood.SetActive(true);
             blood.GetComponent<Animator>().SetBool("isBlood", true);
-        classroom.GetComponent<ClassroomScript>().studentNotListening--;
-        spriteRenderer.color = Color.green;
-        isListening = true;
+            classroom.GetComponent<ClassroomScript>().studentNotListening--;
+            animator.SetBool("isSleep", false);
+            isListening = true;
         }
     }
     void youreTalkingToMe(GameObject studentTalkingToMe)
     {
         isListening = false;
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
-        spriteRenderer.color = Color.red;
+        animator.SetBool("isSleep", true);
         studentSpeakingWith = studentTalkingToMe;
     }
 }
