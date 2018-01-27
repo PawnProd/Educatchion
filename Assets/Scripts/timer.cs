@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class timer : MonoBehaviour {
+public class Timer : MonoBehaviour {
 
     // pivot, objet pour faire tourner l'aiguille
     // hourtext -> text du temps
