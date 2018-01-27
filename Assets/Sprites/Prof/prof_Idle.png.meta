@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4dc0690f3796a184b96bd463af51d675
-timeCreated: 1517062881
+timeCreated: 1517088242
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -102,11 +102,27 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -18, y: 29}
+        - {x: -29, y: 24}
+        - {x: -29, y: -8}
+        - {x: -22, y: -9}
+        - {x: 27, y: -9}
+        - {x: 32, y: -4}
+        - {x: 32, y: 15}
+        - {x: 17, y: 29}
+      physicsShape:
+      - - {x: -18, y: 29}
+        - {x: -29, y: 24}
+        - {x: -29, y: -8}
+        - {x: -22, y: -9}
+        - {x: 27, y: -9}
+        - {x: 32, y: -4}
+        - {x: 32, y: 15}
+        - {x: 17, y: 29}
       tessellationDetail: 0
     - serializedVersion: 2
       name: prof_Idle_1
@@ -116,11 +132,31 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -29, y: -3}
+        - {x: -24, y: -5}
+        - {x: 0, y: -9}
+        - {x: 23, y: -9}
+        - {x: 31, y: -7}
+        - {x: 31, y: 16}
+        - {x: 29, y: 25}
+        - {x: 20, y: 28}
+        - {x: -7, y: 28}
+        - {x: -29, y: 20}
+      physicsShape:
+      - - {x: -29, y: -3}
+        - {x: -24, y: -5}
+        - {x: 0, y: -9}
+        - {x: 23, y: -9}
+        - {x: 31, y: -7}
+        - {x: 31, y: 16}
+        - {x: 29, y: 25}
+        - {x: 20, y: 28}
+        - {x: -7, y: 28}
+        - {x: -29, y: 20}
       tessellationDetail: 0
     - serializedVersion: 2
       name: prof_Idle_2
@@ -130,11 +166,29 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 14, y: 28}
+        - {x: -11, y: 28}
+        - {x: -28, y: 22}
+        - {x: -28, y: -4}
+        - {x: -7, y: -9}
+        - {x: 29, y: -9}
+        - {x: 30, y: -7}
+        - {x: 30, y: 13}
+        - {x: 28, y: 18}
+      physicsShape:
+      - - {x: 14, y: 28}
+        - {x: -11, y: 28}
+        - {x: -28, y: 22}
+        - {x: -28, y: -4}
+        - {x: -7, y: -9}
+        - {x: 29, y: -9}
+        - {x: 30, y: -7}
+        - {x: 30, y: 13}
+        - {x: 28, y: 18}
       tessellationDetail: 0
     - serializedVersion: 2
       name: prof_Idle_3
@@ -144,11 +198,31 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -12, y: 29}
+        - {x: -27, y: 18}
+        - {x: -28, y: 11}
+        - {x: -28, y: -4}
+        - {x: -23, y: -6}
+        - {x: -3, y: -10}
+        - {x: 27, y: -10}
+        - {x: 30, y: -7}
+        - {x: 30, y: 19}
+        - {x: 20, y: 29}
+      physicsShape:
+      - - {x: -12, y: 29}
+        - {x: -27, y: 18}
+        - {x: -28, y: 11}
+        - {x: -28, y: -4}
+        - {x: -23, y: -6}
+        - {x: -3, y: -10}
+        - {x: 27, y: -10}
+        - {x: 30, y: -7}
+        - {x: 30, y: 19}
+        - {x: 20, y: 29}
       tessellationDetail: 0
     - serializedVersion: 2
       name: prof_Idle_4
@@ -158,11 +232,31 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: 9, y: 28}
+        - {x: 4, y: 29}
+        - {x: -7, y: 29}
+        - {x: -28, y: 17}
+        - {x: -29, y: 13}
+        - {x: -29, y: -6}
+        - {x: -7, y: -10}
+        - {x: 31, y: -10}
+        - {x: 31, y: 13}
+        - {x: 28, y: 24}
+      physicsShape:
+      - - {x: 9, y: 28}
+        - {x: 4, y: 29}
+        - {x: -7, y: 29}
+        - {x: -28, y: 17}
+        - {x: -29, y: 13}
+        - {x: -29, y: -6}
+        - {x: -7, y: -10}
+        - {x: 31, y: -10}
+        - {x: 31, y: 13}
+        - {x: 28, y: 24}
       tessellationDetail: 0
     outline: []
     physicsShape: []

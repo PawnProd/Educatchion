@@ -10,6 +10,7 @@ public class StudentScript : MonoBehaviour {
     public float timeBeforeCanStopListening = 3.0f;
     public float currentTime;
     public GameObject classroom;
+    public GameObject blood;
     public float notListeningRandom;
     public float switchRate = 75.0f;
     private float actionNumber = 3.0f;
@@ -20,6 +21,7 @@ public class StudentScript : MonoBehaviour {
     public GameObject[] studentToSpeak ;
     public int numberOfStudentToSpeak;
     public GameObject studentSpeakingWith;
+    public Animator animator;
     private bool speakingToSomeone = false;
     void Start()
     {
@@ -30,6 +32,7 @@ public class StudentScript : MonoBehaviour {
         {
         studentBagScript = studentBag.GetComponent<backPackScript>();
         }
+        animator = GetComponent<Animator>();
         //Set the GameObject's Color quickly to a set Color (blue)
         //spriteRenderer.color = Color.green;
     }
@@ -40,6 +43,12 @@ public class StudentScript : MonoBehaviour {
         if(isListening)
         {
             stopListening();
+        }
+
+        if( blood.activeSelf && blood.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Blood"))
+        {
+            blood.GetComponent<Animator>().SetBool("isBlood", false);
+            blood.SetActive(false);  
         }
     }
 
@@ -86,7 +95,7 @@ public class StudentScript : MonoBehaviour {
         }
         isListening = false;
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
-        spriteRenderer.color = Color.red;
+        animator.SetBool("isSleep", true);
 
 
     }
@@ -101,16 +110,18 @@ public class StudentScript : MonoBehaviour {
             {
                 studentSpeakingWith.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
             }
-        classroom.GetComponent<ClassroomScript>().studentNotListening--;
-        spriteRenderer.color = Color.green;
-        isListening = true;
+            blood.SetActive(true);
+            blood.GetComponent<Animator>().SetBool("isBlood", true);
+            classroom.GetComponent<ClassroomScript>().studentNotListening--;
+            animator.SetBool("isSleep", false);
+            isListening = true;
         }
     }
     void youreTalkingToMe(GameObject studentTalkingToMe)
     {
         isListening = false;
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
-        spriteRenderer.color = Color.red;
+        animator.SetBool("isSleep", true);
         studentSpeakingWith = studentTalkingToMe;
     }
 }

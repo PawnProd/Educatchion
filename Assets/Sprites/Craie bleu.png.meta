@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 4a9a81290273d354e8e26bf6a06564e3
-timeCreated: 1517067295
+guid: 6393eacbc8e06254a808d67685cf782e
+timeCreated: 1517075164
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Sleeping girl brune_0
-    21300002: Sleeping girl brune_1
-    21300004: Sleeping girl brune_2
-    21300006: Sleeping girl brune_3
-    21300008: Sleeping girl brune_4
-    21300010: Sleeping girl brune_5
-    21300012: Sleeping girl brune_6
-    21300014: Sleeping girl brune_7
+    21300000: Craie bleu_0
+    21300002: Craie bleu_1
+    21300004: Craie bleu_2
+    21300006: Craie bleu_3
+    21300008: Craie bleu_4
+    21300010: Craie bleu_5
+    21300012: Craie bleu_6
+    21300014: Craie bleu_7
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 54
+  spritePixelsToUnits: 64
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -98,7 +98,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sleeping girl brune_0
+      name: Craie bleu_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Craie bleu_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Craie bleu_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Craie bleu_3
       rect:
         serializedVersion: 2
         x: 0
@@ -112,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sleeping girl brune_1
+      name: Craie bleu_4
       rect:
         serializedVersion: 2
         x: 64
@@ -126,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sleeping girl brune_2
+      name: Craie bleu_5
       rect:
         serializedVersion: 2
         x: 128
@@ -140,21 +182,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sleeping girl brune_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sleeping girl brune_4
+      name: Craie bleu_6
       rect:
         serializedVersion: 2
         x: 0
@@ -168,38 +196,10 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sleeping girl brune_5
+      name: Craie bleu_7
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sleeping girl brune_6
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sleeping girl brune_7
-      rect:
-        serializedVersion: 2
-        x: 192
         y: 0
         width: 64
         height: 64
@@ -210,7 +210,81 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: -67, y: -45}
+      - {x: -72, y: -45}
+      - {x: -76, y: -47}
+      - {x: -76, y: -57}
+      - {x: -59, y: -90}
+      - {x: -55, y: -92}
+      - {x: -48, y: -89}
+      - {x: -48, y: -84}
+      - {x: -52, y: -75}
+    - - {x: 0, y: -38}
+      - {x: -3, y: -38}
+      - {x: -6, y: -43}
+      - {x: -6, y: -75}
+      - {x: -5, y: -87}
+      - {x: -2, y: -89}
+      - {x: 4, y: -89}
+      - {x: 6, y: -86}
+      - {x: 6, y: -50}
+      - {x: 5, y: -41}
+    - - {x: 53, y: 14}
+      - {x: 50, y: 15}
+      - {x: 45, y: 11}
+      - {x: 45, y: 5}
+      - {x: 57, y: -6}
+      - {x: 79, y: -23}
+      - {x: 81, y: -23}
+      - {x: 86, y: -19}
+      - {x: 86, y: -14}
+      - {x: 73, y: -1}
+    - - {x: -5, y: 6}
+      - {x: -20, y: 8}
+      - {x: -24, y: 3}
+      - {x: -24, y: 0}
+      - {x: -17, y: -6}
+      - {x: 17, y: -14}
+      - {x: 24, y: -14}
+      - {x: 25, y: -10}
+      - {x: 25, y: -5}
+      - {x: 20, y: -2}
+    - - {x: -40, y: 2}
+      - {x: -47, y: 3}
+      - {x: -87, y: 3}
+      - {x: -89, y: -1}
+      - {x: -89, y: -6}
+      - {x: -85, y: -8}
+      - {x: -40, y: -8}
+      - {x: -39, y: -6}
+      - {x: -39, y: 2}
+    - - {x: -60, y: 88}
+      - {x: -65, y: 88}
+      - {x: -68, y: 83}
+      - {x: -73, y: 52}
+      - {x: -73, y: 40}
+      - {x: -70, y: 39}
+      - {x: -65, y: 39}
+      - {x: -62, y: 44}
+      - {x: -57, y: 82}
+      - {x: -57, y: 85}
+    - - {x: 6, y: 86}
+      - {x: -15, y: 58}
+      - {x: -15, y: 44}
+      - {x: -14, y: 40}
+      - {x: -5, y: 40}
+      - {x: 10, y: 45}
+      - {x: 14, y: 67}
+      - {x: 14, y: 86}
+    - - {x: 79, y: 79}
+      - {x: 67, y: 73}
+      - {x: 42, y: 53}
+      - {x: 42, y: 46}
+      - {x: 53, y: 46}
+      - {x: 86, y: 71}
+      - {x: 86, y: 74}
+      - {x: 84, y: 79}
   spritePackingTag: 
   userData: 
   assetBundleName: 

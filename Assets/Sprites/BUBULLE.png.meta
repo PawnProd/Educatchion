@@ -1,14 +1,18 @@
 fileFormatVersion: 2
-guid: fd8397de5e095f94c8bcb3e7546abb9e
-timeCreated: 1517073165
+guid: 913f2b91c8c330a4684bb2db55c1a7db
+timeCreated: 1517077582
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Craie 2_0
-    21300002: Craie 2_1
-    21300004: Craie 2_2
-    21300006: Craie 2_3
-    21300008: Craie 2_4
+    21300000: BUBULLE_0
+    21300002: BUBULLE_1
+    21300004: BUBULLE_2
+    21300006: BUBULLE_3
+    21300008: BUBULLE_4
+    21300010: BUBULLE_5
+    21300012: BUBULLE_6
+    21300014: BUBULLE_7
+    21300016: BUBULLE_8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -95,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Craie 2_0
+      name: BUBULLE_0
       rect:
         serializedVersion: 2
         x: 0
@@ -109,7 +113,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Craie 2_1
+      name: BUBULLE_1
       rect:
         serializedVersion: 2
         x: 64
@@ -123,7 +127,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Craie 2_2
+      name: BUBULLE_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BUBULLE_3
       rect:
         serializedVersion: 2
         x: 0
@@ -137,7 +155,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Craie 2_3
+      name: BUBULLE_4
       rect:
         serializedVersion: 2
         x: 64
@@ -151,10 +169,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Craie 2_4
+      name: BUBULLE_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BUBULLE_6
       rect:
         serializedVersion: 2
         x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BUBULLE_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BUBULLE_8
+      rect:
+        serializedVersion: 2
+        x: 128
         y: 0
         width: 64
         height: 64
