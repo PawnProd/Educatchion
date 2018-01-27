@@ -292,7 +292,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!61 &293466940
 BoxCollider2D:
@@ -336,11 +336,15 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 339896403}
   studentBagScript: {fileID: 339896407}
   haveBag: 1
+  studentToSpeak:
+  - {fileID: 2126723596}
+  - {fileID: 2051295733}
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &339896403 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1123933339066266, guid: 26d9731db91164d45a155d7557349bdd,
@@ -2152,7 +2156,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &932100996
 MonoBehaviour:
@@ -2171,11 +2175,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &950906242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,7 +2280,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &950906246
 MonoBehaviour:
@@ -2293,11 +2299,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &984630937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2545,7 +2553,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1049800764
 MonoBehaviour:
@@ -2564,11 +2572,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 460881882}
   studentBagScript: {fileID: 460881886}
   haveBag: 1
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &1060581539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,7 +2758,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1069007445
 MonoBehaviour:
@@ -2767,11 +2777,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &1101916052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,7 +2978,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1217065434
 MonoBehaviour:
@@ -2985,11 +2997,15 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak:
+  - {fileID: 2126723596}
+  - {fileID: 1049800760}
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &1256323816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3089,7 +3105,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1256323820
 MonoBehaviour:
@@ -3108,11 +3124,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 1771847091}
   studentBagScript: {fileID: 1771847095}
   haveBag: 1
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1001 &1389352767
 Prefab:
   m_ObjectHideFlags: 0
@@ -3395,7 +3413,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1495990766
 MonoBehaviour:
@@ -3414,11 +3432,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &1771847091 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1123933339066266, guid: 26d9731db91164d45a155d7557349bdd,
@@ -3573,22 +3593,6 @@ CompositeCollider2D:
         Y: -30000000
       - X: 80000000
         Y: -35000000
-      - X: 70000000
-        Y: -35000000
-      - X: 70000000
-        Y: -35625000
-      - X: 60000000
-        Y: -35625000
-      - X: 60000000
-        Y: -35000000
-      - X: 30000000
-        Y: -35000000
-      - X: 30000000
-        Y: -35625000
-      - X: 20000000
-        Y: -35625000
-      - X: 20000000
-        Y: -35000000
       - X: 10000000
         Y: -35000000
       - X: 10000000
@@ -3596,22 +3600,6 @@ CompositeCollider2D:
       - X: 90000000
         Y: -40000000
     - - X: 10000000
-        Y: -35000000
-      - X: 0
-        Y: -35000000
-      - X: 0
-        Y: -35625000
-      - X: -10000000
-        Y: -35625000
-      - X: -10000000
-        Y: -35000000
-      - X: -40000000
-        Y: -35000000
-      - X: -40000000
-        Y: -35625000
-      - X: -50000000
-        Y: -35625000
-      - X: -50000000
         Y: -35000000
       - X: -80000000
         Y: -35000000
@@ -3646,26 +3634,10 @@ CompositeCollider2D:
       - {x: 8.5, y: -3}
       - {x: 8, y: -3}
       - {x: 8, y: -3.5}
-      - {x: 7, y: -3.5}
-      - {x: 7, y: -3.5625}
-      - {x: 6, y: -3.5625}
-      - {x: 6, y: -3.5}
-      - {x: 3, y: -3.5}
-      - {x: 3, y: -3.5625}
-      - {x: 2, y: -3.5625}
-      - {x: 2, y: -3.5}
       - {x: 1, y: -3.5}
       - {x: 1, y: -4}
       - {x: 9, y: -4}
     - - {x: 1, y: -3.5}
-      - {x: 0, y: -3.5}
-      - {x: 0, y: -3.5625}
-      - {x: -1, y: -3.5625}
-      - {x: -1, y: -3.5}
-      - {x: -4, y: -3.5}
-      - {x: -4, y: -3.5625}
-      - {x: -5, y: -3.5625}
-      - {x: -5, y: -3.5}
       - {x: -8, y: -3.5}
       - {x: -8, y: -3}
       - {x: -8.5, y: -3}
@@ -3797,7 +3769,7 @@ Tilemap:
   - first: {x: -5, y: -4, z: 0}
     second:
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3833,7 +3805,7 @@ Tilemap:
   - first: {x: -1, y: -4, z: 0}
     second:
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3860,7 +3832,7 @@ Tilemap:
   - first: {x: 2, y: -4, z: 0}
     second:
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3896,7 +3868,7 @@ Tilemap:
   - first: {x: 6, y: -4, z: 0}
     second:
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -3959,7 +3931,7 @@ Tilemap:
   - first: {x: -9, y: -1, z: 0}
     second:
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -4243,8 +4215,8 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: cd0fad5b7e99060459af8286aceba1ec, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: dae2d8a304ece57438f8e50834f4e37d, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 4
     m_Data: {fileID: 617652892}
   - m_RefCount: 1
@@ -4255,8 +4227,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 573c9f7f09e5425488a4358ec639f2db, type: 3}
   - m_RefCount: 40
     m_Data: {fileID: 21300000, guid: 42ea31a9e5fb45e428054936b05a04a1, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: dae2d8a304ece57438f8e50834f4e37d, type: 3}
   - m_RefCount: 4
-    m_Data: {fileID: 21300000, guid: 3139d9dcb19473d4b92edc487c511e0f, type: 3}
+    m_Data: {fileID: 21300000, guid: a3500b3afa24bcd4e92f712565fd68b2, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 12
     m_Data:
@@ -4471,7 +4445,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &2051295737
 MonoBehaviour:
@@ -4490,11 +4464,16 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak:
+  - {fileID: 293466937}
+  - {fileID: 1069007441}
+  - {fileID: 2082667864}
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &2082667864
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,7 +4572,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &2082667868
 MonoBehaviour:
@@ -4612,11 +4591,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &2086684758
 GameObject:
   m_ObjectHideFlags: 0
@@ -4715,7 +4696,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &2086684762
 MonoBehaviour:
@@ -4734,11 +4715,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak: []
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
 --- !u!1 &2126723596
 GameObject:
   m_ObjectHideFlags: 0
@@ -4837,7 +4820,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &2126723600
 MonoBehaviour:
@@ -4856,8 +4839,13 @@ MonoBehaviour:
   classroom: {fileID: 984630937}
   notListeningRandom: 0
   switchRate: 95
-  actionNumber: 2
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
   haveBag: 0
+  studentToSpeak:
+  - {fileID: 293466937}
+  - {fileID: 1217065430}
+  - {fileID: 1069007441}
+  numberOfStudentToSpeak: 0
+  studentSpeakingWith: {fileID: 0}
