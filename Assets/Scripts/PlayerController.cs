@@ -32,9 +32,9 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnCollisionStay2D(Collision2D other)
     {
-        if(other.tag == "Student" && Input.GetMouseButtonDown(0))
+        if(other.collider.tag == "Student" && Input.GetMouseButtonDown(0))
         {
             print("BAFFE !");
         }
