@@ -6,7 +6,7 @@ public class StudentScript : MonoBehaviour {
 
     // Use this for initialization
     private SpriteRenderer spriteRenderer;
-    private bool isListening = true;
+    public bool isListening = true;
     public float timeBeforeCanStopListening = 3.0f;
     public float currentTime;
     public GameObject classroom;
