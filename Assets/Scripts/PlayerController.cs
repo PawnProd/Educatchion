@@ -46,13 +46,14 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(1) && ammo > 0)
         {
+            GameObject projectile = Instantiate(projectilPrefab, spawnProjectil.position, Quaternion.identity, transform.parent);
+            GameObject position = new GameObject("ProjectilePosition");
+            position.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            projectile.GetComponent<Projectile>().student = position;
             RaycastHit2D hit;
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            print("Coucou");
-            if (hit.collider.tag == "Student")
+            if (hit.collider != null && hit.collider.tag == "Student" && !hit.collider.GetComponent<StudentScript>().isListening)
             {
-                print("Coucou 1");
-                GameObject projectile = Instantiate(projectilPrefab, spawnProjectil.position, Quaternion.identity, transform.parent);
                 projectile.GetComponent<Projectile>().student = hit.collider.gameObject;
             }
         }
