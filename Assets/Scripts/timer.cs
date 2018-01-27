@@ -37,6 +37,7 @@ public class timer : MonoBehaviour {
         }
         else
         {
+            hourText.text = "heure : 12:00";
             timeEnd = true;
         }
 	}
