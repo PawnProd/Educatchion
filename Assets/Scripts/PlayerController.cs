@@ -60,16 +60,9 @@ public class PlayerController : MonoBehaviour {
             RaycastHit2D hit;
 
             hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-<<<<<<< HEAD
-            //print("Coucou");
-            if (hit.collider.tag == "Student")
-            {
-                //print("Coucou 1");
-                GameObject projectile = Instantiate(projectilPrefab, spawnProjectil.position, Quaternion.identity, transform.parent);
-=======
+
             if (hit.collider != null && hit.collider.tag == "Student" && !hit.collider.GetComponent<StudentScript>().isListening)
             {
->>>>>>> 24526b3ddf922b392f8163c4a7f6791f6c494e74
                 projectile.GetComponent<Projectile>().student = hit.collider.gameObject;
             }
         }
