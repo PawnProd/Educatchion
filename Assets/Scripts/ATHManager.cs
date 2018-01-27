@@ -59,21 +59,25 @@ public class ATHManager : MonoBehaviour {
     {
         popupWin.SetActive(true);
         scoreText.text = score.ToString();
+        Cursor.visible = true;
     }
 
     public void ShowPopupFailed()
     {
         popupFailed.SetActive(true);
+        Cursor.visible = true;
     }
 
     public void ShowPopupPause()
     {
         popupPause.SetActive(true);
+        Cursor.visible = true;
     }
 
     public void HidePopupPause()
     {
         popupPause.SetActive(false);
         Time.timeScale = 1;
+        Cursor.visible = false;
     }
 }
