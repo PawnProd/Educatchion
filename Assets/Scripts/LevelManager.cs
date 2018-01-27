@@ -22,6 +22,8 @@ public class LevelManager : MonoBehaviour {
 
     private float _rotationSpeed = 0;
 
+    private bool endGame = false;
+
     
 
 	// Use this for initialization
@@ -31,36 +33,39 @@ public class LevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        _time += Time.deltaTime;
-        ath.UpdateTime(_time, _rotationSpeed, ((int)levelDuration));
-        if(plateform.isOnPlateform)
+        if(!endGame)
         {
-            progressSpeed = ((nbStudent - classroom.studentNotListening) * 0.002f) / 100;
-            progressAmout += progressSpeed;
-            ath.UpdateProgessBar(progressSpeed);
-        }
+            _time += Time.deltaTime;
+            ath.UpdateTime(_time, _rotationSpeed, ((int)levelDuration));
+            if (plateform.isOnPlateform)
+            {
+                progressSpeed = ((nbStudent - classroom.studentNotListening) * 0.002f) / 100;
+                progressAmout += progressSpeed;
+                ath.UpdateProgessBar(progressSpeed);
+            }
 
-        print(_time);
-
-        if (progressAmout >= 1)
-        {
-            EndGame(true);
-        }
-        else if (_time > levelDuration * 60)
-        {
-            EndGame(false);
+            if (progressAmout >= 1)
+            {
+                EndGame(true);
+            }
+            else if (_time > levelDuration * 60)
+            {
+                EndGame(false);
+            }
         }
 	}
 
     public void EndGame(bool isWin)
     {
+        endGame = true;
         if(isWin)
         {
-            print("WIN !");
+            int score = (nbStudent - classroom.studentNotListening) * (int)(levelDuration - _time);
+            ath.ShowPopupWin(score);
         }
         else
         {
-            print("LOST !");
+            ath.ShowPopupFailed();
         }
     }
 

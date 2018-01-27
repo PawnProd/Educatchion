@@ -8,6 +8,12 @@ public class PlayerController : MonoBehaviour {
 
     public DetectionBehavior detect;
 
+    public GameObject projectilPrefab;
+
+    public Transform spawnProjectil;
+
+    public int ammo = 4;
+
     private void Start()
     {
         pM = GetComponent<PlayerMovement>();
@@ -36,6 +42,19 @@ public class PlayerController : MonoBehaviour {
         if(Input.GetMouseButtonDown(0) && detect.student != null) // HIT a student
         {
             detect.student.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
+        }
+
+        if (Input.GetMouseButtonDown(1) && ammo > 0)
+        {
+            RaycastHit2D hit;
+            hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+            print("Coucou");
+            if (hit.collider.tag == "Student")
+            {
+                print("Coucou 1");
+                GameObject projectile = Instantiate(projectilPrefab, spawnProjectil.position, Quaternion.identity, transform.parent);
+                projectile.GetComponent<Projectile>().student = hit.collider.gameObject;
+            }
         }
     }
 }

@@ -8,6 +8,12 @@ public class ATHManager : MonoBehaviour {
 
     public GameObject timeNeedle;
 
+    public GameObject popupWin;
+
+    public GameObject popupFailed;
+
+    public Text scoreText;
+
     public Text time;
 
     public int defaultHour;
@@ -38,5 +44,16 @@ public class ATHManager : MonoBehaviour {
     public void UpdateProgessBar(float progressSpeed)
     {
         progressBar.fillAmount += progressSpeed;
+    }
+
+    public void ShowPopupWin(int score)
+    {
+        popupWin.SetActive(true);
+        scoreText.text = score.ToString();
+    }
+
+    public void ShowPopupFailed()
+    {
+        popupFailed.SetActive(true);
     }
 }
