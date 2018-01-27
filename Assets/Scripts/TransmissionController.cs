@@ -18,11 +18,19 @@ public class TransmissionController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isOnPlateform = true; 
+        if(collision.tag == "Player")
+        {
+            isOnPlateform = true;
+        }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isOnPlateform = false;
+        if (collision.tag == "Player")
+        {
+            isOnPlateform = false;
+        }
+
     }
 }
