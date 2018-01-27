@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
 
     public DetectionBehavior detect;
 
+    public Animator animator;
+
     public GameObject projectilPrefab;
 
     public Transform spawnProjectil;
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour {
     private void Start()
     {
         pM = GetComponent<PlayerMovement>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -27,23 +30,32 @@ public class PlayerController : MonoBehaviour {
         if(Input.GetAxis("Horizontal") > 0) // RIGHT
         {
             pM.MoveRight();
+            animator.SetBool("isWalking", true);
         }
         else if(Input.GetAxis("Horizontal") < 0) // LEFT
         {
             pM.MoveLeft();
+            animator.SetBool("isWalking", true);
         }
         else if(Input.GetAxis("Vertical") > 0) // UP
         {
             pM.MoveUp();
+            animator.SetBool("isWalking", true);
         }
         else if(Input.GetAxis("Vertical") < 0) // DOWN
         {
             pM.MoveDown();
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
         }
         
         if(Input.GetMouseButtonDown(0) && detect.student != null) // HIT a student
         {
             detect.student.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
+            animator.SetBool("isAttack", true);
         }
 
         if (Input.GetMouseButtonDown(1) && ammo > 0)
@@ -64,6 +76,11 @@ public class PlayerController : MonoBehaviour {
             {
                 projectile.GetComponent<Projectile>().student = hit.collider.gameObject;
             }
+        }
+
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Atk_Prof"))
+        {
+            animator.SetBool("isAttack", false);
         }
     }
 }
