@@ -16,6 +16,8 @@ public class ATHManager : MonoBehaviour {
 
     public Text time;
 
+    public Text ammo;
+
     public int defaultHour;
 
     public Image progressBar;
@@ -39,6 +41,11 @@ public class ATHManager : MonoBehaviour {
 
         timeNeedle.transform.Rotate(new Vector3(0, 0, -(rotationSpeed * Time.deltaTime)));
         time.text = string.Format("Heure : {0} : {1}", hour, minutesString);
+    }
+
+    public void UpdateAmmo(int newAmmoAmount)
+    {
+        ammo.text = newAmmoAmount.ToString();
     }
 
     public void UpdateProgessBar(float progressSpeed)

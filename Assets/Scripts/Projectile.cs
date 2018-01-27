@@ -11,6 +11,10 @@ public class Projectile : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position = Vector2.MoveTowards(transform.position, student.transform.position, speed * Time.deltaTime);
+        if (transform.position == student.transform.position)
+        {
+            Destroy(gameObject);
+        }
 	}
 
     private void OnTriggerEnter2D(Collider2D collision)
