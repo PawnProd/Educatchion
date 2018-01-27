@@ -43,7 +43,7 @@ public class StudentScript : MonoBehaviour {
             stopListening();
         }
 
-        if(blood.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Blood"))
+        if( blood.activeSelf && blood.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Blood"))
         {
             blood.GetComponent<Animator>().SetBool("isBlood", false);
             blood.SetActive(false);  

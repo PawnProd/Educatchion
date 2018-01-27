@@ -33,7 +33,7 @@ public class LevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(!endGame)
+        if(!endGame && Time.timeScale != 0)
         {
             _time += Time.deltaTime;
             ath.UpdateTime(_time, _rotationSpeed, ((int)levelDuration));
@@ -51,6 +51,11 @@ public class LevelManager : MonoBehaviour {
             else if (_time > levelDuration * 60)
             {
                 EndGame(false);
+            }
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                ath.ShowPopupPause();
+                Time.timeScale = 0;
             }
         }
 	}

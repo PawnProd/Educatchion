@@ -12,6 +12,8 @@ public class ATHManager : MonoBehaviour {
 
     public GameObject popupFailed;
 
+    public GameObject popupPause;
+
     public Text scoreText;
 
     public Text time;
@@ -62,5 +64,16 @@ public class ATHManager : MonoBehaviour {
     public void ShowPopupFailed()
     {
         popupFailed.SetActive(true);
+    }
+
+    public void ShowPopupPause()
+    {
+        popupPause.SetActive(true);
+    }
+
+    public void HidePopupPause()
+    {
+        popupPause.SetActive(false);
+        Time.timeScale = 1;
     }
 }
