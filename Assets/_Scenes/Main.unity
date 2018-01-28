@@ -942,6 +942,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 404493289}
+    - target: {fileID: 1073573010556500, guid: d09adab9288d7e0469bba81782c7f933, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d09adab9288d7e0469bba81782c7f933, type: 2}
   m_IsPrefabParent: 0
@@ -981,7 +985,7 @@ MonoBehaviour:
   progressSpeed: 0
   progressAmout: 0
   ratioSpeed: 0.004
-  tuto: 0
+  tuto: 1
 --- !u!4 &404493288
 Transform:
   m_ObjectHideFlags: 0
@@ -3321,9 +3325,10 @@ MonoBehaviour:
   textBubble: {fileID: 1864962138}
   levelManager: {fileID: 404493287}
   listText:
-  - Fuck, this fucking teacher is insane, he will try again to teach us something
-  - Yeah and don't sleep dude or else he will fucked you with his ruler or his chalk.
-  - Asshole, when he's not in his fucking stage, everyone suck his lesson.
+  - Damn, this fucking teacher is insane, he's gonna try to teach some shit again!
+  - Crap, don't fall asleep bro otherwise he'll slap you with his ruler or throw his
+    damn chalks at you!
+  - What an asshole! No one is listening to him when he's not on his stage anyways.
   textDuration: 6
 --- !u!4 &1039729547
 Transform:
