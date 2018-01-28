@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 192318671}
   - component: {fileID: 192318673}
   - component: {fileID: 192318672}
+  - component: {fileID: 192318674}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -341,7 +342,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f073ef1c4df467340a1b477063434865, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 808bfa2aa282c5145abbdf8446110c43, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -355,6 +356,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 192318670}
+--- !u!95 &192318674
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192318670}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e43224385d51aa4419fc0c6275025be3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &592919766
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,7 +561,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6e4c34126ae4a8a45ad1547732992d87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 266bf0a604f8f07478ede5c93c937f82, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -665,7 +683,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 48d7bb94460cbce4ca3b6220fbaad545, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e14be821be34764098038e521117aac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
