@@ -640,6 +640,10 @@ Prefab:
       propertyPath: objetPause
       value: 
       objectReference: {fileID: 941941753}
+    - target: {fileID: 1410787190206982, guid: 4e86632f88f71cc4bbeb2befaccc97c9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114183831629307332, guid: 4e86632f88f71cc4bbeb2befaccc97c9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4e86632f88f71cc4bbeb2befaccc97c9, type: 2}
