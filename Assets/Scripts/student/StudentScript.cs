@@ -92,7 +92,7 @@ public class StudentScript : MonoBehaviour {
         {
             animator.SetBool("isSleep", true);
         }
-        else if (actionChoice == 2)
+        else if (actionChoice == 2 && classroom.GetComponent<ClassroomScript>().studentNotListening < (classroom.GetComponent<ClassroomScript>().maxStudentNotListening-1))
         {
             numberOfStudentToSpeak = studentToSpeak.Length;
             studentSpeakingWith = studentToSpeak[Random.Range(0, studentToSpeak.Length -1)];
