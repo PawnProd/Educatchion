@@ -78,30 +78,38 @@ public class StudentScript : MonoBehaviour {
     }
     void chooseAction()
     {
-        actionChoice = Random.Range(0.0f,(actionNumber-1));
-        actionChoice = Mathf.Round(actionChoice);
-        print(actionChoice);
-        //print(actionChoice);
-        if(actionChoice == 0 && haveBag == true)
+        if(isListening)
         {
-            animator.SetBool("isSleep", true);
-            studentBagScript.toggleBackpack();
+            isListening = false;
+            actionChoice = Random.Range(0.0f, (actionNumber - 1));
+            actionChoice = Mathf.Round(actionChoice);
+            print(actionChoice);
+            //print(actionChoice);
+            if (actionChoice == 0 && haveBag == true)
+            {
+                animator.SetBool("isSleep", true);
+                studentBagScript.toggleBackpack();
+                classroom.GetComponent<ClassroomScript>().studentNotListening++;
+            }
+            else if (actionChoice == 1)
+            {
+                animator.SetBool("isSleep", true);
+                classroom.GetComponent<ClassroomScript>().studentNotListening++;
+            }
+            else if (actionChoice == 2 && studentToSpeak != null && classroom.GetComponent<ClassroomScript>().studentNotListening < (classroom.GetComponent<ClassroomScript>().maxStudentNotListening - 1))
+            {
+                principalTalker = true;
+                animator.SetBool("isTalking", true);
+                classroom.GetComponent<ClassroomScript>().studentNotListening++;
+                studentToSpeak.GetComponent<StudentScript>().SendMessage("youreTalkingToMe", gameObject, SendMessageOptions.DontRequireReceiver);
+                speakingToSomeone = true;
+                sourceBlablaStudent.clip = listAudio[Random.Range(0, listAudio.Length)];
+                sourceBlablaStudent.Play();
+            }
+
+            
         }
-        else if(actionChoice == 1 )
-        {
-            animator.SetBool("isSleep", true);
-        }
-        else if (actionChoice == 2 && studentToSpeak != null && classroom.GetComponent<ClassroomScript>().studentNotListening < (classroom.GetComponent<ClassroomScript>().maxStudentNotListening-1))
-        {
-            principalTalker = true;
-            animator.SetBool("isTalking", true);
-            studentToSpeak.GetComponent<StudentScript>().SendMessage("youreTalkingToMe",gameObject, SendMessageOptions.DontRequireReceiver);
-            speakingToSomeone = true;
-            sourceBlablaStudent.clip = listAudio[Random.Range(0, listAudio.Length)];
-            sourceBlablaStudent.Play();
-        }
-        isListening = false;
-        classroom.GetComponent<ClassroomScript>().studentNotListening++;
+       
         
 
 
@@ -111,6 +119,7 @@ public class StudentScript : MonoBehaviour {
         if (haveBag && studentBag.GetComponent<SpriteRenderer>().enabled)
         {
             studentBagScript.toggleBackpack();
+
         }
         if (!isListening)
         {

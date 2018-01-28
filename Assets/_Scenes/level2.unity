@@ -321,7 +321,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -449,13 +454,18 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: studentToSpeak
       value: 
       objectReference: {fileID: 924323446}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -774,7 +784,7 @@ MonoBehaviour:
   levelDuration: 2
   progressSpeed: 0
   progressAmout: 0
-  ratioSpeed: 0.004
+  ratioSpeed: 0.003
   tuto: 0
 --- !u!4 &404493288
 Transform:
@@ -1008,6 +1018,11 @@ Prefab:
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114578612714191818, guid: cc611fc2f04444944ae600b83f060e91,
+        type: 2}
+      propertyPath: ammo
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc611fc2f04444944ae600b83f060e91, type: 2}
   m_IsPrefabParent: 0
@@ -1138,7 +1153,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1256,7 +1276,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1416,7 +1441,7 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
@@ -1428,6 +1453,11 @@ Prefab:
       propertyPath: studentToSpeak
       value: 
       objectReference: {fileID: 1662737792}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -3518,13 +3548,18 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: studentToSpeak
       value: 
       objectReference: {fileID: 1862859726}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -3717,13 +3752,18 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: studentToSpeak
       value: 
       objectReference: {fileID: 1264912809}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -3855,7 +3895,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -4015,7 +4060,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -4068,7 +4118,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -4232,7 +4287,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -4385,6 +4445,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HidePopupPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 114322221085696744, guid: d09adab9288d7e0469bba81782c7f933,
+        type: 2}
+      propertyPath: m_Text
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114580498778500728, guid: d09adab9288d7e0469bba81782c7f933, type: 2}
@@ -5638,7 +5703,12 @@ Prefab:
     - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
         type: 2}
       propertyPath: switchRate
-      value: 20
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: timeBeforeCanStopListening
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
