@@ -54,6 +54,7 @@ public class LevelManager : MonoBehaviour {
             ath.UpdateTime(_time, _rotationSpeed, ((int)levelDuration));
             if (plateform.isOnPlateform)
             {
+               
                 progressSpeed = ((nbStudent - classroom.studentNotListening) * ratioSpeed) / 100;
                 progressAmout += progressSpeed;
                 ath.UpdateProgessBar(progressSpeed);
@@ -69,6 +70,7 @@ public class LevelManager : MonoBehaviour {
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
+                levelState = LevelState.paused;
                 ath.ShowPopupPause();
                 Time.timeScale = 0;
             }
@@ -77,10 +79,13 @@ public class LevelManager : MonoBehaviour {
 
     public void EndGame(bool isWin)
     {
+        levelState = LevelState.endGame;
         endGame = true;
         if(isWin)
         {
-            int score = Mathf.Abs((nbStudent - classroom.studentNotListening) * (int)(levelDuration - _time));
+            int score = Mathf.Abs((nbStudent - classroom.studentNotListening) * (int)((levelDuration * 60) - _time));
+            print("NbListening : " + (nbStudent - classroom.studentNotListening));
+            print("Ratio score : " + (levelDuration * 60 - _time));
             ath.ShowPopupWin(score);
         }
         else
@@ -96,5 +101,6 @@ public class LevelManager : MonoBehaviour {
 public enum LevelState
 {
     running,
-    paused
+    paused,
+    endGame
 }

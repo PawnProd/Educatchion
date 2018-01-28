@@ -19,9 +19,17 @@ public class TransmissionController : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        if(LevelManager.levelState == LevelState.endGame || LevelManager.levelState == LevelState.paused)
+        {
+            sourceBlablaProf.Stop();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player") 
         {
             isOnPlateform = true;
             animator.SetBool("isOnPlateform", true);
