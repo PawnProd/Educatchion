@@ -65,7 +65,7 @@ public class StudentScript : MonoBehaviour {
             if(classroom.GetComponent<ClassroomScript>().studentNotListening < classroom.GetComponent<ClassroomScript>().maxStudentNotListening)
             {
                 notListeningRandom = Random.value*100;
-                if(notListeningRandom >= switchRate)
+                if(notListeningRandom <= switchRate)
                 {
                 chooseAction();
                 }
