@@ -84,7 +84,7 @@ public class StudentScript : MonoBehaviour {
         //print(actionChoice);
         if(actionChoice == 0 && haveBag == true)
         {
-            animator.SetBool("isSleep", false);
+            animator.SetBool("isSleep", true);
             studentBagScript.toggleBackpack();
         }
         else if(actionChoice == 1 )
@@ -107,13 +107,15 @@ public class StudentScript : MonoBehaviour {
 
     }
     public void getHit()
-    {   
-        if(!isListening)
+    {
+        if (haveBag && studentBag.GetComponent<SpriteRenderer>().enabled)
         {
-            if(actionChoice == 0 && haveBag == true)
-            {
-                studentBagScript.toggleBackpack();
-            }else if(speakingToSomeone == true)
+            studentBagScript.toggleBackpack();
+        }
+        if (!isListening)
+        {
+           
+            if(speakingToSomeone == true)
             {
                 studentToSpeak.GetComponent<StudentScript>().getHit();
                 speakingToSomeone = false;

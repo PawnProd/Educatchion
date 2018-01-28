@@ -3520,6 +3520,11 @@ Prefab:
       propertyPath: switchRate
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: studentToSpeak
+      value: 
+      objectReference: {fileID: 1862859726}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -3714,6 +3719,11 @@ Prefab:
       propertyPath: switchRate
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: studentToSpeak
+      value: 
+      objectReference: {fileID: 1264912809}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
