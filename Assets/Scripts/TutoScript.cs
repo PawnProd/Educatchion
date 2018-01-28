@@ -1,32 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutoScript : MonoBehaviour {
-    public GameObject bubble;
-    public SpriteRenderer bubbleSprite;
-    public float currentTime;
-    private bool tutoIsHide = true;
-    private float i = 0;
+    public Image bubble;
+    public Text textBubble;
+    public LevelManager levelManager;
+    public string[] listText;
+    public float textDuration;
+    private int _indexText = 0;
+    private float _timer = 0;
+
     // Use this for initialization
     void Start () {
-        bubbleSprite = bubble.GetComponent<SpriteRenderer>();
+        textBubble.text = listText[_indexText];
+        bubble.transform.parent.gameObject.SetActive(true);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (tutoIsHide)
+        if(_indexText < listText.Length)
         {
-            tutoIsHide = !tutoIsHide;
-            bubbleSprite.enabled = !bubbleSprite.enabled;
-        }
-            if (currentTime >= 0)
+            _timer += Time.deltaTime;
+            if (_timer >= textDuration)
             {
-                currentTime -= Time.deltaTime;
-            }else if(i == 0)
-            {
-                i++;
-                bubbleSprite.enabled = !bubbleSprite.enabled;
+                _timer = 0;
+                ++_indexText;
+                if(_indexText < listText.Length)
+                    textBubble.text = listText[_indexText];
             }
+        } else
+        {
+            bubble.transform.parent.gameObject.SetActive(false);
+            levelManager.levelState = LevelState.running;
+        }
     }
 }

@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: ad17b5c3137b3ae468849de380fa7cf5
-timeCreated: 1517130385
+guid: f1cb67d69d58fb243a29bbe31c0ef89b
+timeCreated: 1517130148
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Estrade_1 h (1)_0
-    21300002: Estrade_1 h (1)_1
+    21300000: HUD SOURIS SHEET_0
+    21300002: HUD SOURIS SHEET_1
+    21300004: HUD SOURIS SHEET_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -48,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 24
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -92,12 +93,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Estrade_1 h (1)_0
+      name: HUD SOURIS SHEET_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 256
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -106,12 +107,26 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Estrade_1 h (1)_1
+      name: HUD SOURIS SHEET_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HUD SOURIS SHEET_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}

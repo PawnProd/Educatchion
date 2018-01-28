@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: ad17b5c3137b3ae468849de380fa7cf5
-timeCreated: 1517130385
+guid: 8ec70334a3a32104489edf462d0aaeee
+timeCreated: 1517130808
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Estrade_1 h (1)_0
-    21300002: Estrade_1 h (1)_1
+    21300000: Spite sheet souris_0
+    21300002: Spite sheet souris_1
+    21300004: Spite sheet souris_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -48,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -92,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Estrade_1 h (1)_0
+      name: Spite sheet souris_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 256
         width: 256
-        height: 64
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,13 +107,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Estrade_1 h (1)_1
+      name: Spite sheet souris_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spite sheet souris_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
-        height: 64
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

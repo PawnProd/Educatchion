@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour {
 
     public TransmissionController plateform;
 
+    public LevelState levelState;
+
     public int nbStudent = 12;
 
     public float levelDuration = 180.0f;
@@ -19,6 +21,8 @@ public class LevelManager : MonoBehaviour {
     public float progressAmout = 0;
 
     public float ratioSpeed;
+
+    public bool tuto = false;
 
     private float _time = 0;
 
@@ -31,11 +35,20 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _rotationSpeed =  ((2 * Mathf.PI) - 0.25f) / levelDuration;
+        if(tuto)
+        {
+            levelState = LevelState.paused;
+        } 
+        else
+        {
+            levelState = LevelState.running;
+        }
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(!endGame && Time.timeScale != 0)
+        if(!endGame && Time.timeScale != 0 && levelState == LevelState.running)
         {
             _time += Time.deltaTime;
             ath.UpdateTime(_time, _rotationSpeed, ((int)levelDuration));
@@ -76,4 +89,12 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
+
+
+}
+
+public enum LevelState
+{
+    running,
+    paused
 }
