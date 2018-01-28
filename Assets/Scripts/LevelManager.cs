@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour {
 
     public TransmissionController plateform;
 
-    public LevelState levelState;
+    public static LevelState levelState;
 
     public int nbStudent = 12;
 

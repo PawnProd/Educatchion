@@ -42,16 +42,20 @@ public class StudentScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(isListening)
+        if(LevelManager.levelState != LevelState.paused)
         {
-            stopListening();
-        }
+            if (isListening)
+            {
+                stopListening();
+            }
 
-        if( blood.activeSelf && blood.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Blood"))
-        {
-            blood.GetComponent<Animator>().SetBool("isBlood", false);
-            blood.SetActive(false);  
+            if (blood.activeSelf && blood.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Blood"))
+            {
+                blood.GetComponent<Animator>().SetBool("isBlood", false);
+                blood.SetActive(false);
+            }
         }
+      
     }
 
     void stopListening()
