@@ -1404,12 +1404,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4718044410349684, guid: 087c16e861cfc77418398c7f7f228154,
     type: 2}
   m_PrefabInternal: {fileID: 785959918}
---- !u!114 &699337297 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114303341348209134, guid: d09adab9288d7e0469bba81782c7f933,
-    type: 2}
-  m_PrefabInternal: {fileID: 401225928}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &763747645 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1600332332847162, guid: 087c16e861cfc77418398c7f7f228154,
@@ -3290,54 +3284,6 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
---- !u!1 &1039729545
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1039729547}
-  - component: {fileID: 1039729546}
-  m_Layer: 0
-  m_Name: Tuto
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1039729546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1039729545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc716bc7daa4f834dbb9fdb5bf15a22d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubble: {fileID: 699337297}
-  textBubble: {fileID: 1864962138}
-  levelManager: {fileID: 404493287}
-  listText:
-  - Fuck, this fucking teacher is insane, he will try again to teach us something
-  - Yeah and don't sleep dude or else he will fucked you with his ruler or his chalk.
-  - Asshole, when he's not in his fucking stage, everyone suck his lesson.
-  textDuration: 6
---- !u!4 &1039729547
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1039729545}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.52, y: 0.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1050180229 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4718044410349684, guid: 087c16e861cfc77418398c7f7f228154,
@@ -4823,12 +4769,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1864962138 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114812816885538284, guid: d09adab9288d7e0469bba81782c7f933,
-    type: 2}
-  m_PrefabInternal: {fileID: 401225928}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1879393832 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1600332332847162, guid: 087c16e861cfc77418398c7f7f228154,
