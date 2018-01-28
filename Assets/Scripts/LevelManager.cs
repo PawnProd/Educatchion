@@ -22,6 +22,8 @@ public class LevelManager : MonoBehaviour {
 
     public float ratioSpeed;
 
+    public bool tuto = false;
+
     private float _time = 0;
 
     private float _rotationSpeed = 0;
@@ -33,7 +35,15 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _rotationSpeed =  ((2 * Mathf.PI) - 0.25f) / levelDuration;
-        levelState = LevelState.paused;
+        if(tuto)
+        {
+            levelState = LevelState.paused;
+        } 
+        else
+        {
+            levelState = LevelState.running;
+        }
+        
 	}
 	
 	// Update is called once per frame
