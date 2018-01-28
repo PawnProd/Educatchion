@@ -8,16 +8,23 @@ public class TransmissionController : MonoBehaviour {
 
     public AudioSource sourceBlablaProf;
 
+    public Animator animator;
+
     public float transmission;
 
     public bool isOnPlateform;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
             isOnPlateform = true;
+            animator.SetBool("isOnPlateform", true);
             sourceBlablaProf.clip = listAudio[Random.Range(0, listAudio.Length)];
             sourceBlablaProf.Play();
         }
@@ -29,6 +36,7 @@ public class TransmissionController : MonoBehaviour {
         if (collision.tag == "Player")
         {
             isOnPlateform = false;
+            animator.SetBool("isOnPlateform", false);
             sourceBlablaProf.Stop();
         }
 
