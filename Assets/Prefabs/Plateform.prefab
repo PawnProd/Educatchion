@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 212518101999459512}
   - component: {fileID: 61676931568567934}
   - component: {fileID: 114027003346821132}
-  - component: {fileID: 95161897559176428}
+  - component: {fileID: 95909678587061776}
   m_Layer: 0
   m_Name: Plateform
   m_TagString: Untagged
@@ -178,7 +178,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!95 &95161897559176428
+--- !u!95 &95909678587061776
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1

@@ -30,7 +30,7 @@ public class TutoScript : MonoBehaviour {
                 if(_indexText < listText.Length)
                     textBubble.text = listText[_indexText];
             }
-        } else
+        } else if(bubble.transform.parent.gameObject.activeSelf)
         {
             bubble.transform.parent.gameObject.SetActive(false);
             LevelManager.levelState = LevelState.running;

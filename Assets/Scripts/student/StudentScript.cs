@@ -20,10 +20,9 @@ public class StudentScript : MonoBehaviour {
     public GameObject studentBag = null;
     public backPackScript studentBagScript = null;
     public bool haveBag = false;
-    public GameObject[] studentToSpeak ;
-    public int numberOfStudentToSpeak;
-    public GameObject studentSpeakingWith;
+    public GameObject studentToSpeak ;
     public Animator animator;
+    public bool principalTalker = false ;
     private bool speakingToSomeone = false;
     void Start()
     {
@@ -92,12 +91,11 @@ public class StudentScript : MonoBehaviour {
         {
             animator.SetBool("isSleep", true);
         }
-        else if (actionChoice == 2 && classroom.GetComponent<ClassroomScript>().studentNotListening < (classroom.GetComponent<ClassroomScript>().maxStudentNotListening-1))
+        else if (actionChoice == 2 && studentToSpeak != null && classroom.GetComponent<ClassroomScript>().studentNotListening < (classroom.GetComponent<ClassroomScript>().maxStudentNotListening-1))
         {
-            numberOfStudentToSpeak = studentToSpeak.Length;
-            studentSpeakingWith = studentToSpeak[Random.Range(0, studentToSpeak.Length -1)];
+            principalTalker = true;
             animator.SetBool("isTalking", true);
-            studentSpeakingWith.GetComponent<StudentScript>().SendMessage("youreTalkingToMe",gameObject, SendMessageOptions.DontRequireReceiver);
+            studentToSpeak.GetComponent<StudentScript>().SendMessage("youreTalkingToMe",gameObject, SendMessageOptions.DontRequireReceiver);
             speakingToSomeone = true;
             sourceBlablaStudent.clip = listAudio[Random.Range(0, listAudio.Length)];
             sourceBlablaStudent.Play();
@@ -108,7 +106,7 @@ public class StudentScript : MonoBehaviour {
 
 
     }
-    void getHit()
+    public void getHit()
     {   
         if(!isListening)
         {
@@ -117,7 +115,8 @@ public class StudentScript : MonoBehaviour {
                 studentBagScript.toggleBackpack();
             }else if(speakingToSomeone == true)
             {
-                studentSpeakingWith.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
+                studentToSpeak.GetComponent<StudentScript>().getHit();
+                speakingToSomeone = false;
             }
             blood.SetActive(true);
             blood.GetComponent<Animator>().SetBool("isBlood", true);
@@ -134,6 +133,5 @@ public class StudentScript : MonoBehaviour {
         animator.SetBool("isSleep", false);
         animator.SetBool("isTalking", true);
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
-        studentSpeakingWith = studentTalkingToMe;
     }
 }

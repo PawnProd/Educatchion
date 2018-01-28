@@ -77,6 +77,7 @@ public class ATHManager : MonoBehaviour {
     public void HidePopupPause()
     {
         popupPause.SetActive(false);
+        LevelManager.levelState = LevelState.running;
         Time.timeScale = 1;
         Cursor.visible = false;
     }
