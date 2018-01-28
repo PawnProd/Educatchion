@@ -451,6 +451,11 @@ Prefab:
       propertyPath: switchRate
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: studentToSpeak
+      value: 
+      objectReference: {fileID: 924323446}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -1413,6 +1418,16 @@ Prefab:
       propertyPath: switchRate
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: principalTalker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410402477775910, guid: 087c16e861cfc77418398c7f7f228154,
+        type: 2}
+      propertyPath: studentToSpeak
+      value: 
+      objectReference: {fileID: 1662737792}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 087c16e861cfc77418398c7f7f228154, type: 2}
@@ -1525,7 +1540,7 @@ TilemapRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8992ddf8f4874c7499705fc32807ee11, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
