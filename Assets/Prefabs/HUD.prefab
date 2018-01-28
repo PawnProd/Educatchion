@@ -466,6 +466,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1867961106185768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4709810919329524}
+  - component: {fileID: 114175784535636778}
+  m_Layer: 0
+  m_Name: ATHManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1872567050598254
 GameObject:
   m_ObjectHideFlags: 1
@@ -536,6 +552,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4709810919329524
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867961106185768}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 498.40747, y: 270.59967, z: -7.0123115}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224645685119923272}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &95121052703658316
 Animator:
   serializedVersion: 3
@@ -668,6 +697,26 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114175784535636778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867961106185768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7758d7bb97d1bf41a3264ed74a3115d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeNeedle: {fileID: 1262733050253166}
+  popupWin: {fileID: 1073573010556500}
+  popupFailed: {fileID: 1137260444499344}
+  popupPause: {fileID: 1788428079764866}
+  scoreText: {fileID: 114263378443637472}
+  time: {fileID: 114695332588994150}
+  ammo: {fileID: 114322221085696744}
+  defaultHour: 11
+  progressBar: {fileID: 114850350770293512}
 --- !u!114 &114190547484559240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2104,6 +2153,7 @@ RectTransform:
   - {fileID: 224400517580927858}
   - {fileID: 224842042867025052}
   - {fileID: 224831557439568562}
+  - {fileID: 4709810919329524}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
