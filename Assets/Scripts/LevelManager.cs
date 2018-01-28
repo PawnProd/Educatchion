@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour {
 
     public TransmissionController plateform;
 
+    public AudioSource sourceCloche;
+
     public static LevelState levelState;
 
     public int nbStudent = 12;
@@ -81,7 +83,8 @@ public class LevelManager : MonoBehaviour {
     {
         levelState = LevelState.endGame;
         endGame = true;
-        if(isWin)
+        sourceCloche.Play();
+        if (isWin)
         {
             int score = Mathf.Abs((nbStudent - classroom.studentNotListening) * (int)((levelDuration * 60) - _time));
             print("NbListening : " + (nbStudent - classroom.studentNotListening));
