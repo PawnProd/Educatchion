@@ -95,7 +95,7 @@ public class StudentScript : MonoBehaviour {
         else if (actionChoice == 2 && classroom.GetComponent<ClassroomScript>().studentNotListening < (classroom.GetComponent<ClassroomScript>().maxStudentNotListening-1))
         {
             numberOfStudentToSpeak = studentToSpeak.Length;
-            studentSpeakingWith = studentToSpeak[Random.Range(0, studentToSpeak.Length -1)];
+            studentSpeakingWith = studentToSpeak[Random.Range(0, studentToSpeak.Length)];
             animator.SetBool("isTalking", true);
             studentSpeakingWith.GetComponent<StudentScript>().SendMessage("youreTalkingToMe",gameObject, SendMessageOptions.DontRequireReceiver);
             speakingToSomeone = true;
