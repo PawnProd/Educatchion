@@ -5,6 +5,8 @@ using UnityEngine;
 public class StudentScript : MonoBehaviour {
 
     // Use this for initialization
+    public AudioClip[] listAudio;
+    public AudioSource sourceBlablaStudent;
     private SpriteRenderer spriteRenderer;
     public bool isListening = true;
     public float timeBeforeCanStopListening = 3.0f;
@@ -83,19 +85,21 @@ public class StudentScript : MonoBehaviour {
         }
         else if(actionChoice == 1 )
         {
-
+            animator.SetBool("isSleep", true);
         }
         else if (actionChoice == 2)
         {
             numberOfStudentToSpeak = studentToSpeak.Length;
             studentSpeakingWith = studentToSpeak[Random.Range(0, studentToSpeak.Length -1)];
-            
+            animator.SetBool("isTalking", true);
             studentSpeakingWith.GetComponent<StudentScript>().SendMessage("youreTalkingToMe",gameObject, SendMessageOptions.DontRequireReceiver);
             speakingToSomeone = true;
+            sourceBlablaStudent.clip = listAudio[Random.Range(0, listAudio.Length)];
+            sourceBlablaStudent.Play();
         }
         isListening = false;
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
-        animator.SetBool("isSleep", true);
+        
 
 
     }
@@ -112,16 +116,17 @@ public class StudentScript : MonoBehaviour {
             }
             blood.SetActive(true);
             blood.GetComponent<Animator>().SetBool("isBlood", true);
+            animator.SetBool("isTalking", false);
             classroom.GetComponent<ClassroomScript>().studentNotListening--;
             animator.SetBool("isSleep", false);
             isListening = true;
+            sourceBlablaStudent.Stop();
         }
     }
     void youreTalkingToMe(GameObject studentTalkingToMe)
     {
         isListening = false;
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
-        animator.SetBool("isSleep", true);
         studentSpeakingWith = studentTalkingToMe;
     }
 }

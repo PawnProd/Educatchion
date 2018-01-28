@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class TransmissionController : MonoBehaviour {
 
+    public AudioClip[] listAudio;
+
+    public AudioSource sourceBlablaProf;
+
     public float transmission;
 
     public bool isOnPlateform;
 
-    private void Update()
-    {
-        if(isOnPlateform)
-        {
-            // On calcul la transmission en fonction du nombre d'élève à l'écoute
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
             isOnPlateform = true;
+            sourceBlablaProf.clip = listAudio[Random.Range(0, listAudio.Length)];
+            sourceBlablaProf.Play();
         }
         
     }
@@ -30,6 +29,7 @@ public class TransmissionController : MonoBehaviour {
         if (collision.tag == "Player")
         {
             isOnPlateform = false;
+            sourceBlablaProf.Stop();
         }
 
     }
