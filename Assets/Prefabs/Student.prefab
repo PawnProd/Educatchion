@@ -28,6 +28,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1149262572067650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4599641667086356}
+  - component: {fileID: 82164433381369224}
+  m_Layer: 0
+  m_Name: TalkingSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1600332332847162
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,6 +76,19 @@ Transform:
   m_Father: {fileID: 4718044410349684}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4599641667086356
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149262572067650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4718044410349684}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4718044410349684
 Transform:
   m_ObjectHideFlags: 1
@@ -71,6 +100,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000002}
   m_Children:
   - {fileID: 4221112172139324}
+  - {fileID: 4599641667086356}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 90}
@@ -99,6 +129,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!82 &82164433381369224
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149262572067650}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95332557238384814
 Animator:
   serializedVersion: 3
@@ -144,13 +254,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9376f87cf2eed6a4dbf21b2c735f7458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listAudio:
+  - {fileID: 8300000, guid: ed48d52a28b5b4240b7c7e58fe4be58b, type: 3}
+  - {fileID: 8300000, guid: f6cff866fb4df224ab963720cdfbc7a7, type: 3}
+  - {fileID: 8300000, guid: d265e85c9ce4cbe4e83710bf4a24decb, type: 3}
+  - {fileID: 8300000, guid: 07f73d52410936046880c6a1988b105f, type: 3}
+  - {fileID: 8300000, guid: 648acf1393a50c849abf434e4eb4dcc9, type: 3}
+  - {fileID: 8300000, guid: 3141996271b568447a91bc10b6359bf9, type: 3}
+  - {fileID: 8300000, guid: 129a3eb1ef526df4394067cec9fc2c9c, type: 3}
+  - {fileID: 8300000, guid: 7f4a046e1acf04c4cb72e4a6b59adfc2, type: 3}
+  - {fileID: 8300000, guid: fd2a25ff5dc4cbe47b7f610d3401cede, type: 3}
+  sourceBlablaStudent: {fileID: 82164433381369224}
   isListening: 1
-  timeBeforeCanStopListening: 6
+  timeBeforeCanStopListening: 5
   currentTime: 0
   classroom: {fileID: 0}
   blood: {fileID: 1128979457618134}
   notListeningRandom: 0
-  switchRate: 95
+  switchRate: 90
   actionChoice: 0
   studentBag: {fileID: 0}
   studentBagScript: {fileID: 0}
@@ -158,6 +279,7 @@ MonoBehaviour:
   studentToSpeak: []
   numberOfStudentToSpeak: 0
   studentSpeakingWith: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!212 &212733155069574888
 SpriteRenderer:
   m_ObjectHideFlags: 1

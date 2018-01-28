@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour {
 
     public Animator animator;
 
+    public AudioSource sourceAttack;
+
+    public AudioSource sourceProjectile;
+
     public GameObject projectilPrefab;
 
     public Transform spawnProjectil;
@@ -56,14 +60,18 @@ public class PlayerController : MonoBehaviour {
         {
             detect.student.SendMessage("getHit", SendMessageOptions.DontRequireReceiver);
             animator.SetBool("isAttack", true);
+            sourceAttack.Play();
         }
 
         if (Input.GetMouseButtonDown(1) && ammo > 0)
         {
             --ammo;
+            sourceProjectile.Play();
             ath.UpdateAmmo(ammo);
             GameObject projectile = Instantiate(projectilPrefab, spawnProjectil.position, Quaternion.identity, transform.parent);
             GameObject position = new GameObject("ProjectilePosition");
+
+            
 
             position.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             position.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, 0);
