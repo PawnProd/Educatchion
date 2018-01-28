@@ -81,6 +81,7 @@ public class StudentScript : MonoBehaviour {
         //print(actionChoice);
         if(actionChoice == 0 && haveBag == true)
         {
+            animator.SetBool("isSleep", false);
             studentBagScript.toggleBackpack();
         }
         else if(actionChoice == 1 )
@@ -126,6 +127,8 @@ public class StudentScript : MonoBehaviour {
     void youreTalkingToMe(GameObject studentTalkingToMe)
     {
         isListening = false;
+        animator.SetBool("isSleep", false);
+        animator.SetBool("isTalking", true);
         classroom.GetComponent<ClassroomScript>().studentNotListening++;
         studentSpeakingWith = studentTalkingToMe;
     }
