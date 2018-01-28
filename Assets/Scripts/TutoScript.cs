@@ -33,7 +33,7 @@ public class TutoScript : MonoBehaviour {
         } else
         {
             bubble.transform.parent.gameObject.SetActive(false);
-            LevelManager.levelState = LevelState.running;
+            levelManager.levelState = LevelState.running;
         }
     }
 }
