@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 222207919437685142}
   - component: {fileID: 114016850877877054}
   - component: {fileID: 114384157500195870}
-  - component: {fileID: 114580498778500728}
   m_Layer: 5
   m_Name: PauseButto
   m_TagString: Untagged
@@ -897,6 +896,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 114175784535636778}
+        m_MethodName: UnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menu
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 114617883105228580}
         m_MethodName: ReplaceScene
         m_Mode: 5
@@ -984,7 +994,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: accd51c03eb742545a3a6b34e4d4f890, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -1036,7 +1046,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114175784535636778}
         m_MethodName: HidePopupPause
         m_Mode: 1
         m_Arguments:
@@ -1146,19 +1156,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114580498778500728
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1155795187627280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11dcae3d207425347bf34059fa58c47b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pause: 0
-  objetPause: {fileID: 0}
 --- !u!114 &114617883105228580
 MonoBehaviour:
   m_ObjectHideFlags: 1

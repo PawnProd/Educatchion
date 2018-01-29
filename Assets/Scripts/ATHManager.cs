@@ -74,6 +74,11 @@ public class ATHManager : MonoBehaviour {
         Cursor.visible = true;
     }
 
+    public void UnPause()
+    {
+        Time.timeScale = 1;
+    }
+
     public void HidePopupPause()
     {
         popupPause.SetActive(false);
